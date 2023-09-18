@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora js</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Vinculação do arquivo CSS externo chamado "style.css" -->
+    <script src="js/calculadora.js"></script> <!-- Vinculação do arquivo JavaScript externo chamado "calculadora.js" -->
+    <style>
+        /* Estilos gerais */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column; /* Alinhar elementos verticalmente */
+            align-items: center; /* Centraliza horizontalmente */
+        }
+
+        /* Estilos do cabeçalho */
+        header {
+            background-color: rgb(143, 70, 238);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+        }
+
+        /* Estilos do texto do cabeçalho */
+        header h1 {
+            color: white;
+            font-size: 24px;
+        }
+
+        /* Estilos do nav no topo */
+        nav {
+            background-color: rgb(143, 70, 238);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            position: absolute; /* Posição absoluta para fixar no topo */
+            top: 0; /* Fixar no topo */
+        }
+
+        /* Estilos do contêiner principal */
+        .container {
+            max-width: 800px; /* Largura máxima da página */
+            background-color: #ffffff;
+            padding: 20px;
+            border: 2px solid rgb(143, 70, 238);
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 60px; /* Espaço para o cabeçalho */
+        }
+
+        /* Estilos do formulário de login */
+        .login-form {
+            width: 80%; /* Largura do formulário */
+            margin: 0 auto; /* Centralizar horizontalmente */
+        }
+
+        /* Estilos para os rótulos e campos de entrada */
+        .login-form label,
+        .login-form input {
+            display: block; /* Um abaixo do outro */
+            margin-bottom: 10px; /* Espaçamento inferior entre os elementos */
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="container">
+        <h1>Página Inicial</h1>
+        <figure>
+            <img src="images/" alt="" title="logo do slide">
+        </figure>
+        <nav>
+            <a href="index.html">Home</a> <!-- Link para a página "Home" -->
+            <a href="contato.html">Contato</a> <!-- Link para a página "Info" -->
+            <a href="login.html">Login</a> <!-- Link para a página "Dicas" -->
+        </nav>
+    </header>
+    <div class="container">
+        <form class="login-form" action="home.html">
+            <h1>Login</h1>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit" formaction="index.html">Entrar</button>
+        </form>
+        <footer>
+            <p>&copy; 2023 Calculadora</p>
+        </footer>
+    </div>
+</body>
+</html>
